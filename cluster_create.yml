@@ -3,7 +3,7 @@ kind: ClusterConfig
 
 metadata:
   name: incubyte-assignment-cluster
-  region: ap-south-1
+  region: us-east-2
 
 nodeGroups:
   - name: incubyte-assignment-ng

@@ -41,12 +41,12 @@ node{
               credentialsId: 'AWS_CREDS',
               accessKeyVariable: 'AWS_ACCESS_KEY_ID',
               secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
-          ]]){
+          ]])
       
       sh '''
               PRODUCT="incubyte-assignment"
               kubectl version --short --client
-              aws eks --region ap-south-1 update-kubeconfig --name $PRODUCT-cluster
+              aws eks --region us-east-2 update-kubeconfig --name $PRODUCT-cluster
               kubectl get svc
               echo "Execute the deployment"
               kubectl get namespace $PRODUCT
