@@ -41,7 +41,7 @@ node{
               credentialsId: 'AWS_CREDS',
               accessKeyVariable: 'AWS_ACCESS_KEY_ID',
               secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
-          ]])
+          ]]){
       
       sh '''
               PRODUCT="incubyte-assignment"
